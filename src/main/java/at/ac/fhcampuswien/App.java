@@ -10,7 +10,7 @@ public class App {
         int col = startingWeekday - 1;
 
         for (int i = 1; i < startingWeekday; i++){
-            System.out.print("    ");
+            System.out.print("   ");
         }
         for (int day = 1; day <= numberOfDays; day++) {
             System.out.printf("%2d ",day);
@@ -37,10 +37,10 @@ public class App {
     }
     // Aufgabe 3
     public static void guessingGame(int numberToGuess){
-        for (int i = 1; i <= 10; i++){
-            Scanner sc = new Scanner(System.in);
-            int guess = 0;
+        Scanner sc = new Scanner(System.in);
+        int guess = 0;
 
+        for (int i = 1; i <= 10; i++){
             System.out.print("Guess number " + i +": ");
             guess = sc.nextInt();
             if (i == 10 && numberToGuess != guess) {
