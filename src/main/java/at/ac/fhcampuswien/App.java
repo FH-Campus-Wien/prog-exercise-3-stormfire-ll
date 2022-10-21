@@ -10,7 +10,7 @@ public class App {
         int col = startingWeekday - 1;
 
         for (int i = 1; i < startingWeekday; i++){
-            System.out.print("   ");
+            System.out.print("    ");
         }
         for (int day = 1; day <= numberOfDays; day++) {
             System.out.printf("%2d ",day);
@@ -20,7 +20,6 @@ public class App {
                 col = 0;
             }
         }
-        System.out.println("");     // Leerzeile = Zeilenumbruch
     }
 
     // Aufgabe 2
@@ -120,7 +119,7 @@ public class App {
         // etc.
         //
         //Aufgabe 1
-        oneMonthCalendar(31,3);
+        oneMonthCalendar(31,1);
         //Aufgabe 2
         for (long n:lcg(8)){    //Methode Array zurück, n= Laufvar.: in jed. Durchlauf neuen Wert
             System.out.println(n);
