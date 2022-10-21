@@ -15,6 +15,7 @@ public class App {
         for (int day = 1; day <= numberOfDays; day++) {
             System.out.printf("%2d ",day);
             col++;
+
             if (col == 7) {
                 System.out.print("\n");
                 col = 0;
